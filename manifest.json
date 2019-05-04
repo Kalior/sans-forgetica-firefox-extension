@@ -22,5 +22,12 @@
     "scripts": ["background.js"]
   },
 
-  "web_accessible_resources": ["fonts/SansForgetica-Regular.otf"]
+  "web_accessible_resources": ["fonts/SansForgetica.otf"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["addFont.js"]
+    }
+  ]
 }
